@@ -108,11 +108,15 @@
 
 ### 如何使用
 
+#### 仓库克隆
+
 首先先克隆本仓库
 
 ```bash
 $ git clone --recursive https://github.com/GDUT-ADSec/ADCTF2025.git
 ```
+
+#### Docker 镜像构建及运行
 
 对于使用了 Docker 容器的题目，你需要先构建 Docker 镜像，这里给出可行的命令（注意替换）
 
@@ -121,6 +125,18 @@ $ docker build -t <your_image_tag_here> .
 ```
 
 这将从当前命令行所在目录开始构建镜像
+
+随后通过以下指令运行 Docker 容器（注意替换）
+
+```bash
+$ docker run --name <your_container_name_here> -e "A1CTF_FLAG=<your_flag_here>" -P --rm -it <your_image_tag_here>
+```
+
+运行容器后可通过以下指令查看端口映射信息
+
+```bash
+$ docker container port <your_container_name_here>
+```
 
 ## Writeup
 
