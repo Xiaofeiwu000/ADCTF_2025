@@ -1,0 +1,4 @@
+# 2) 计算 flag
+import hashlib
+d = 61859534623601494462930656514060814065864458829849606574762191787997165697161
+flag = "flag{" + hashlib.sha256(str(d).encode()).hexdigest()[:32] + "}"
