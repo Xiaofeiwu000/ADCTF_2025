@@ -70,6 +70,9 @@
 [submodule "challenges/forensic/its-genshin-time"]
 	path = challenges/forensic/its-genshin-time
 	url = https://github.com/GDUTMeow-Challenges/Challenge-Its-Genshin-Time.git
+[submodule "subprojects/ricky8955555-challenges"]
+	path = subprojects/ricky8955555-challenges
+	url = https://github.com/ricky8955555/adctf-2025-challenges.git
 [submodule "challenges/misc/test-your-knowledge"]
 	path = challenges/misc/test-your-knowledge
 	url = https://github.com/GDUTMeow-Challenges/Challenge-Test-Your-Knowledge.git
